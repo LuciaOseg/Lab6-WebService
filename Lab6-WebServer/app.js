@@ -4,7 +4,6 @@ const weather = require('./weather.js')
 
 const app = express()
 
-const port = process.env.PORT || 3000;
 
 app.get('/', function(req, res) {
    res.send('<h1>Holaa</h1>')
@@ -37,6 +36,6 @@ app.get('*', function(req, res) {
   })
 })
 
-app.listen(port, function() {
+app.listen(process.env.PORT, || 3000 {
   console.log('Up and running!')
 })
